@@ -9,7 +9,18 @@
 import UIKit
 
 class BlueViewController: UIViewController {
+    
+    var delegate:GreenViewController?
 
+    @IBAction func changeColor(sender: AnyObject) {
+        delegate?.changeBackgroundColor()
+    }
+    @IBAction func changeValue(sender: AnyObject) {
+       let appDelegate = UIApplication.sharedApplication().delegate as? AppDelegate
+        
+        appDelegate?.stations?[0] = "강남"
+    }
+    
     @IBOutlet weak var myLabel: UILabel!
     
     var labelText:String?
@@ -22,9 +33,18 @@ class BlueViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        if let myText = labelText{
-            myLabel.text = myText
+//        if let myText = labelText{
+//            myLabel.text = myText
+//        }
+        
+        let appDelegate = UIApplication.sharedApplication().delegate as? AppDelegate
+        if let station = appDelegate?.stations{
+            myLabel.text = station[2]
         }
+        
+//        if let st = station {
+//            myLabel.text = st
+//        }
     }
 
     override func didReceiveMemoryWarning() {

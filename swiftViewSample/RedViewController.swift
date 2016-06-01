@@ -12,11 +12,17 @@ class RedViewController: UIViewController {
 
     @IBOutlet weak var myLabel: UILabel!
     
+    override func viewWillAppear(animated: Bool) {
+        let appDelegate = UIApplication.sharedApplication().delegate as? AppDelegate
+        if let station = appDelegate?.stations{
+            myLabel.text = station[0]
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        myLabel.text = "테스트"
+
     }
 
     override func didReceiveMemoryWarning() {

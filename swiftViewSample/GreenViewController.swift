@@ -18,8 +18,9 @@ class GreenViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        if let myText = labelText {
-            myLabel.text = myText
+        let appDelegate = UIApplication.sharedApplication().delegate as? AppDelegate
+        if let station = appDelegate?.stations{
+            myLabel.text = station[1]
         }
     }
 
@@ -29,9 +30,15 @@ class GreenViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let nextVC = segue.destinationViewController as? BlueViewController
+        let blueVC = segue.destinationViewController as? BlueViewController
         
-        nextVC?.labelText = "합정"
+        blueVC?.delegate = self
+        
+        blueVC?.labelText = "합정"
+    }
+    
+    func changeBackgroundColor(){
+        self.view.backgroundColor = UIColor.blueColor()
     }
 
     /*

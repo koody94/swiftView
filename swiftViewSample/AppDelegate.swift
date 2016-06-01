@@ -13,9 +13,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    var station: String?
+    var stations:[String]?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        station = "삼성역"
+        
+        stations = ["시청", "을지로입구", "을지로3가"]
+        
         return true
     }
 

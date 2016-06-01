@@ -202,6 +202,24 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5zB-2M-A0L">
+                                <rect key="frame" x="265" y="396" width="95" height="30"/>
+                                <state key="normal" title="Change Value">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeValue:" destination="Kli-05-39y" eventType="touchUpInside" id="P5m-8J-RHW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j1O-Pv-S3Q">
+                                <rect key="frame" x="256" y="481" width="94" height="30"/>
+                                <state key="normal" title="Change Color">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeColor:" destination="Kli-05-39y" eventType="touchUpInside" id="Ksh-JN-LRH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.10069342417082761" green="0.33614849909364519" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
