@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GreenViewController: UIViewController {
+class GreenViewController: UIViewController, BlueProtocol{
 
     @IBOutlet weak var myLabel: UILabel!
     
@@ -35,6 +35,10 @@ class GreenViewController: UIViewController {
         blueVC?.delegate = self
         
         blueVC?.labelText = "합정"
+        blueVC?.changeColorFunc = {
+            (color:UIColor)->Void in
+            self.view.backgroundColor = color
+        }
     }
     
     func changeBackgroundColor(){

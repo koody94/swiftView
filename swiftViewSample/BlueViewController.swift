@@ -8,10 +8,22 @@
 
 import UIKit
 
+protocol BlueProtocol {
+    func changeBackgroundColor()
+}
+
 class BlueViewController: UIViewController {
     
-    var delegate:GreenViewController?
+    var delegate:BlueProtocol?
+    var labelText:String?
+    var changeColorFunc:((UIColor)->())?
+    
+    @IBOutlet weak var myLabel: UILabel!
 
+    @IBAction func changeColorFunc(sender: AnyObject) {
+        changeColorFunc?(UIColor.redColor())
+    }
+    
     @IBAction func changeColor(sender: AnyObject) {
         delegate?.changeBackgroundColor()
     }
@@ -21,9 +33,7 @@ class BlueViewController: UIViewController {
         appDelegate?.stations?[0] = "강남"
     }
     
-    @IBOutlet weak var myLabel: UILabel!
-    
-    var labelText:String?
+
     
     @IBAction func goHome(sender: AnyObject) {
         self.navigationController?.popToRootViewControllerAnimated(true)
