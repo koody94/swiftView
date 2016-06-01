@@ -20,6 +20,9 @@ class BlueViewController: UIViewController {
     
     @IBOutlet weak var myLabel: UILabel!
 
+    @IBAction func changeColorNoti(sender: AnyObject) {
+        NSNotificationCenter.defaultCenter().postNotificationName("changecolor", object: UIColor.brownColor())
+    }
     @IBAction func changeColorFunc(sender: AnyObject) {
         changeColorFunc?(UIColor.redColor())
     }

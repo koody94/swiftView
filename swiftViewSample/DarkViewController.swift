@@ -13,9 +13,11 @@ class DarkViewController: UIViewController {
     @IBAction func goHome(sender: AnyObject) {
         self.navigationController?.popToRootViewControllerAnimated(true)
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(changeBackgroundCoor), name: "changecolor", object: nil)
         // Do any additional setup after loading the view.
     }
 
@@ -24,7 +26,9 @@ class DarkViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    func changeBackgroundCoor(notification:NSNotification){
+        self.view.backgroundColor = notification.object as? UIColor
+    }
     /*
     // MARK: - Navigation
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="TFc-yr-Gfu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="c2k-ic-srs">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -43,7 +43,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1199" y="314"/>
+            <point key="canvasLocation" x="2011" y="314"/>
         </scene>
         <!--Green-->
         <scene sceneID="zhG-c8-6mQ">
@@ -83,7 +83,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tVO-XV-bzX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1821" y="314"/>
+            <point key="canvasLocation" x="2633" y="314"/>
         </scene>
         <!--Purple-->
         <scene sceneID="L2j-Ec-WXH">
@@ -111,7 +111,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1OT-nG-hBA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1821" y="992"/>
+            <point key="canvasLocation" x="2633" y="1012"/>
         </scene>
         <!--Yellow-->
         <scene sceneID="wbZ-et-aFO">
@@ -139,7 +139,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ady-Pk-KcO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1199" y="992"/>
+            <point key="canvasLocation" x="2011" y="1012"/>
         </scene>
         <!--Dark-->
         <scene sceneID="KZE-f7-dOc">
@@ -169,7 +169,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U9B-GR-NBJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2451" y="992"/>
+            <point key="canvasLocation" x="3263" y="1012"/>
         </scene>
         <!--Blue-->
         <scene sceneID="6Y3-dW-hJD">
@@ -203,7 +203,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5zB-2M-A0L">
-                                <rect key="frame" x="265" y="396" width="95" height="30"/>
+                                <rect key="frame" x="253" y="331" width="95" height="30"/>
                                 <state key="normal" title="Change Value">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -212,7 +212,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j1O-Pv-S3Q">
-                                <rect key="frame" x="265" y="450" width="94" height="30"/>
+                                <rect key="frame" x="254" y="369" width="94" height="30"/>
                                 <state key="normal" title="Change Color">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -221,12 +221,21 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNR-e8-jkU">
-                                <rect key="frame" x="259" y="496" width="107" height="30"/>
+                                <rect key="frame" x="253" y="402" width="107" height="30"/>
                                 <state key="normal" title="Change Color 2">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="changeColorFunc:" destination="Kli-05-39y" eventType="touchUpInside" id="bd9-Lt-Pks"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CY7-sy-uef">
+                                <rect key="frame" x="248" y="440" width="107" height="30"/>
+                                <state key="normal" title="Change Color 3">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeColorNoti:" destination="Kli-05-39y" eventType="touchUpInside" id="OPh-GY-dMY"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -239,12 +248,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KaD-jk-DxD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2451" y="314"/>
+            <point key="canvasLocation" x="3263" y="314"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Item-->
         <scene sceneID="qJJ-KN-dnn">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TFc-yr-Gfu" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="kUz-GG-Gvy"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="yCE-J6-Clw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -257,12 +267,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n4y-HT-4Hf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="549" y="314"/>
+            <point key="canvasLocation" x="1277" y="314"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Item-->
         <scene sceneID="auw-oV-EPY">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SxB-mF-iih" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="X8c-9F-P1H"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4wc-Iz-XGK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -275,7 +286,25 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="axI-J4-kXD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="549" y="992"/>
+            <point key="canvasLocation" x="1277" y="1034"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Byn-eH-nnc">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="c2k-ic-srs" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="bgG-XN-7Dc">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="TFc-yr-Gfu" kind="relationship" relationship="viewControllers" id="cfQ-Ht-jlY"/>
+                        <segue destination="SxB-mF-iih" kind="relationship" relationship="viewControllers" id="HNe-6i-jgY"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BZz-Wd-roe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="477" y="656"/>
         </scene>
     </scenes>
 </document>

@@ -36,7 +36,8 @@ class GreenViewController: UIViewController, BlueProtocol{
         
         blueVC?.labelText = "합정"
         blueVC?.changeColorFunc = {
-            (color:UIColor)->Void in
+            //(color:UIColor)->Void in
+            (color) in
             self.view.backgroundColor = color
         }
     }
