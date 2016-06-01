@@ -12,6 +12,12 @@
 		CA071BCD1CFE64AD00316259 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA071BCB1CFE64AD00316259 /* Main.storyboard */; };
 		CA071BCF1CFE64AD00316259 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA071BCE1CFE64AD00316259 /* Assets.xcassets */; };
 		CA071BD21CFE64AD00316259 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA071BD01CFE64AD00316259 /* LaunchScreen.storyboard */; };
+		CA071BDA1CFE671C00316259 /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA071BD91CFE671C00316259 /* RedViewController.swift */; };
+		CA071BDC1CFE672D00316259 /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA071BDB1CFE672D00316259 /* GreenViewController.swift */; };
+		CA071BDE1CFE673900316259 /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA071BDD1CFE673900316259 /* BlueViewController.swift */; };
+		CA071BE01CFE6D9E00316259 /* YellowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA071BDF1CFE6D9E00316259 /* YellowViewController.swift */; };
+		CA071BE21CFE6DAB00316259 /* PurpleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA071BE11CFE6DAB00316259 /* PurpleViewController.swift */; };
+		CA071BE41CFE6DB900316259 /* DarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA071BE31CFE6DB900316259 /* DarkViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		CA071BCE1CFE64AD00316259 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA071BD11CFE64AD00316259 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA071BD31CFE64AD00316259 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA071BD91CFE671C00316259 /* RedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
+		CA071BDB1CFE672D00316259 /* GreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
+		CA071BDD1CFE673900316259 /* BlueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
+		CA071BDF1CFE6D9E00316259 /* YellowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YellowViewController.swift; sourceTree = "<group>"; };
+		CA071BE11CFE6DAB00316259 /* PurpleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurpleViewController.swift; sourceTree = "<group>"; };
+		CA071BE31CFE6DB900316259 /* DarkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DarkViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +68,13 @@
 			children = (
 				CA071BC71CFE64AD00316259 /* AppDelegate.swift */,
 				CA071BC91CFE64AD00316259 /* ViewController.swift */,
+				CA071BD91CFE671C00316259 /* RedViewController.swift */,
+				CA071BDB1CFE672D00316259 /* GreenViewController.swift */,
+				CA071BDD1CFE673900316259 /* BlueViewController.swift */,
 				CA071BCB1CFE64AD00316259 /* Main.storyboard */,
+				CA071BDF1CFE6D9E00316259 /* YellowViewController.swift */,
+				CA071BE11CFE6DAB00316259 /* PurpleViewController.swift */,
+				CA071BE31CFE6DB900316259 /* DarkViewController.swift */,
 				CA071BCE1CFE64AD00316259 /* Assets.xcassets */,
 				CA071BD01CFE64AD00316259 /* LaunchScreen.storyboard */,
 				CA071BD31CFE64AD00316259 /* Info.plist */,
@@ -135,7 +153,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA071BDC1CFE672D00316259 /* GreenViewController.swift in Sources */,
 				CA071BCA1CFE64AD00316259 /* ViewController.swift in Sources */,
+				CA071BE21CFE6DAB00316259 /* PurpleViewController.swift in Sources */,
+				CA071BDA1CFE671C00316259 /* RedViewController.swift in Sources */,
+				CA071BE41CFE6DB900316259 /* DarkViewController.swift in Sources */,
+				CA071BDE1CFE673900316259 /* BlueViewController.swift in Sources */,
+				CA071BE01CFE6D9E00316259 /* YellowViewController.swift in Sources */,
 				CA071BC81CFE64AD00316259 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
